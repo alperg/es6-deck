@@ -1,54 +1,19 @@
 ES6 Deck
 ================
 
-After 6 years, Javascript standards have updated
+Javascript standards have been updated
 
 - 7 reasons why you should care
 - 25 best new features, with code examples and best practises
 - How to use these features right now
 
-View online @ [http://turnbullm.github.io/es6-presentation](http://turnbullm.github.io/es6-presentation/)
+View online @ [https://alperg.github.io/es6-deck/](https://alperg.github.io/es6-deck/)
 
 Usage
 -----
 
 - Space bar = Next screen
 - F = Full screen mode
-
-Sections
---------
-
-- [Intro](http://turnbullm.github.io/es6-presentation/#/intro)
-- [Ecma International](http://turnbullm.github.io/es6-presentation/#/ecma-intro)
-- [ES5](http://turnbullm.github.io/es6-presentation/#/es5)
-- [ES6 intro](http://turnbullm.github.io/es6-presentation/#/es6)
-- [7 reasons why you should care](http://turnbullm.github.io/es6-presentation/#/preso-why)
-- [Browser support](http://turnbullm.github.io/es6-presentation/#/browser-support-intro)
-- [Babel](http://turnbullm.github.io/es6-presentation/#/babel)
-- [25 features of ES6](http://turnbullm.github.io/es6-presentation/#/es6-intro)
-    - [Let](http://turnbullm.github.io/es6-presentation/#/let-intro)
-    - [Constant](http://turnbullm.github.io/es6-presentation/#/constants)
-    - [New string functions](http://turnbullm.github.io/es6-presentation/#/string-features)
-    - [New array functions](http://turnbullm.github.io/es6-presentation/#/array-features)
-    - [Array.from](http://turnbullm.github.io/es6-presentation/#/array-from)
-    - [Spread](http://turnbullm.github.io/es6-presentation/#/array-spread-es5)
-    - [Destructuring](http://turnbullm.github.io/es6-presentation/#/destructuring)
-    - [Object shorthand](http://turnbullm.github.io/es6-presentation/#/object-shorthand)
-    - [Template literals](http://turnbullm.github.io/es6-presentation/#/template-literals)
-    - [Sets](http://turnbullm.github.io/es6-presentation/#/sets-challenge)
-    - [Weak Sets](http://turnbullm.github.io/es6-presentation/#/weak-sets-challenge)
-    - [Maps](http://turnbullm.github.io/es6-presentation/#/maps)
-    - [Weak Maps](http://turnbullm.github.io/es6-presentation/#/weak-maps)
-    - [for of](http://turnbullm.github.io/es6-presentation/#/iterators)
-    - [Default parameters](http://turnbullm.github.io/es6-presentation/#/default-parameters)
-    - [Class](http://turnbullm.github.io/es6-presentation/#/class-intro)
-    - [Class Getters & Setters](http://turnbullm.github.io/es6-presentation/#/class-getter-setter)
-    - [Class Constructors](http://turnbullm.github.io/es6-presentation/#/class-constructor)
-    - [Sub classing](http://turnbullm.github.io/es6-presentation/#/class-extends)
-    - [Arrow functions](http://turnbullm.github.io/es6-presentation/#/arrow-functions)
-    - [Modules](http://turnbullm.github.io/es6-presentation/#/modules)
-    - [Promises](http://turnbullm.github.io/es6-presentation/#/promises-es5-intro)
-- [Wrap up & links](http://turnbullm.github.io/es6-presentation/#/done)
 
 Reveal.js
 ---------
