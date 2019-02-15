@@ -234,8 +234,6 @@ Array.filter()</pre>
     <ul style="font-size: 200%">
       <li class="fragment">Why change Javascript?</li>
       <li class="fragment">Why should I care?</li>
-      <li class="fragment">Too cutting edge</li>
-      <li class="fragment">Browser support</li>
     </ul>
   </div>
 </section>
@@ -352,24 +350,24 @@ Array.filter()</pre>
     <li class="fragment">ES6 / ES2015 released in <strong>2015</strong></li>
     <li class="fragment">ES7 / ES2016 released in <strong>2016</strong></li>
     <li class="fragment">ES8 / ES2017 released in <strong>2017</strong></li>
-    <li class="fragment">ES9 / ES2018 released <strong>this year!</strong></li>
+    <li class="fragment">ES9 / ES2018 released <strong>last year</strong></li>
+    <li class="fragment">ES10 / ES2019 will be released <strong>this year!</strong></li>
     <li class="fragment">Javascript is <strong>evolving quickly</strong></li>
   </ul>
-  <div class="tiles">
-    <div class="fragment tile" style="padding: 25px">
-      <h4>Today</h4>
-      <ul>
-        <li class="fragment space-m">We use <em>ES5</em> features without thinking</li>
-        <li class="fragment space-m">We start to use new <em>ES6</em> features</li>
-      </ul>
-    </div>
-    <div class="fragment tile" style="padding: 25px;">
-      <h4>Soon</h4>
-      <ul>
-        <li class="fragment space-m">We use <em>ES6</em> features without thinking</li>
-        <li class="fragment space-m">We start to use new <em>ES7</em> features</li>
-      </ul>
-    </div>
+</section>
+
+<section data-background="#D4F1FF" id="why-left-behind">
+  <h4>Today</h4>
+  <ul>
+    <li class="fragment space-m">We use <em>ES5</em> features without thinking</li>
+    <li class="fragment space-m">We start to use new <em>ES6</em> features</li>
+  </ul>
+  <div class="fragment tile" style="padding: 25px;">
+    <h4>Soon</h4>
+    <ul>
+      <li class="fragment space-m">We use <em>ES6, ES7, ES8</em> features without thinking</li>
+      <li class="fragment space-m">We start to use new <em>ES9</em> features</li>
+    </ul>
   </div>
   <p class="fragment space-m">Start using it <strong>now</strong>, or be <strong>left behind</strong>!</p>
 </section>
@@ -422,18 +420,18 @@ Array.filter()</pre>
 
 <section data-background="#D4F1FF" id="browser-support">
   <h3>ES6 Browser (and Node.js) Support</h3>
-  <p>October 2018</p>
+  <p>February 2019</p>
   <table>
     <tr>
       <th>Safari 12</th>
       <td>99%</td>
     </tr>
     <tr>
-      <th>Chrome 69</th>
+      <th>Chrome 74</th>
       <td>98%</td>
     </tr>
     <tr>
-      <th>Firefox 62</th>
+      <th>Firefox 65</th>
       <td>98%</td>
     </tr>
     <tr>
@@ -445,8 +443,13 @@ Array.filter()</pre>
       <td>11%</td>
     </tr>
     <tr>
-      <th>Node (>= 8.10 < 9)</th>
+      <th>Node 6.5</th>
       <td>97%</td>
+    </tr>
+    <tr>
+      <th>Node 11</th>
+      <td>98%</td>
+    </tr>
   </table>
 </section>
 
@@ -509,16 +512,6 @@ regularES5Code();</pre>
 <section data-background="#D4F1FF" id="es6-intro">
   <h2>Let's learn ES6</h2>
   <p class="fragment">25 new features</p>
-  <div class="fragment">
-    <strong>Barry&nbsp;&nbsp;&nbsp;</strong>
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
-    <span class="fragment">I love you</span>
-  </div>
-  <div class="fragment">
-    <strong>Anthony&nbsp;&nbsp;&nbsp;</strong>
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
-    <span class="fragment">&nbsp;Stop staring at me</span>
-  </div>
 </section>
 
 <section data-background="#D4F1FF" data-transition="fade" id="let-intro">
@@ -531,7 +524,6 @@ var myBestFriend = 'Barry';
 
 <span class="fragment">console.log( myBestFriend ); // ???</span></pre>
   <div>
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <span class="fragment">What is logged to the console?</span>
   </div>
 </section>
@@ -601,7 +593,6 @@ let numbers = [1, 5, 10];
 <span class="fragment">console.log( i );</span><span class="fragment"> // undefined</span>
 <span class="fragment">console.log( number );</span><span class="fragment"> // undefined</span></pre>
   <p class="fragment">This is how most would expect <strong>var</strong> to behave</p>
-  <img src="images/best-practise-bear.png" class="fragment inline" style="position: absolute; left: 22px;" />
   <p class="fragment" style="text-align: left; margin-left: 150px; margin-top: 35px">Use <strong>let</strong> instead of <strong>var</strong></p>
   <p class="fragment" style="text-align: left; margin-left: 250px; margin-top: -20px; font-size: 80%">(unless you <em>really</em> need <strong>var</strong> scoping)</p>
 </section>
@@ -613,7 +604,6 @@ let numbers = [1, 5, 10];
 const myConstant = 'never changes';
 
 <span class="fragment">myConstant = 'can I change it?';</span><span class="fragment"> // NO!</span></pre>
-  <img src="images/best-practise-bear.png" class="fragment inline" style="position: absolute; left: 22px;" />
   <p class="fragment" style="text-align: left; margin-left: 150px; margin-top: 35px">Use <strong>const</strong> instead of <strong>let</strong></p>
   <p class="fragment" style="text-align: left; margin-left: 150px; margin-top: -20px;">Guarantees references won't be overridden</p>
   <p class="fragment" style="text-align: left; margin-left: 200px; margin-top: -10px; font-size: 90%">If you need references overridden, use <strong>let</strong></p>
@@ -712,7 +702,7 @@ Array.from(document.querySelectorAll('img'));
   <pre class="fragment highlight javascript" contenteditable>
 const sentence = joinWords('I', 'love', 'Barry');</pre>
   <div style="position: relative; top: -35px;">
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
+    <br />
     <span class="fragment">Create the <strong>joinWords</strong> function</span>
   </div>
   <pre class="fragment highlight javascript" contenteditable>
@@ -724,8 +714,8 @@ function joinWords() {
   const words = Array.prototype.slice.call(arguments);
   // Join the words and return them
 }</pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Use spread!
   </div>
 </section>
@@ -758,7 +748,7 @@ const sentence = joinWords('I', 'love', 'Barry'); // This works
 <span class="fragment">const words = ['I', 'love', 'Barry'];</span>
 <span class="fragment">const sentence = joinWords(words);</span><span class="fragment"> // This doesn't work</span></pre>
   <div style="position: relative; top: -35px;">
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
+    <br />
     <span class="fragment">Call <strong>joinWords</strong> with an array</span>
   </div>
   <pre class="fragment highlight javascript" contenteditable>
@@ -766,8 +756,8 @@ const sentence = joinWords('I', 'love', 'Barry'); // This works
 <span class="fragment">const sentence = joinWords(words);</span></pre>
   <pre class="fragment highlight javascript" contenteditable>
 const sentence = joinWords.apply(null, words);</pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Use spread!
   </div>
 </section>
@@ -793,15 +783,15 @@ const wordsCopy = [...words];</pre>
 <section data-background="#AFDCFB" id="destructuring">
   <pre class="fragment highlight javascript" contenteditable>
 const position = [50, 200];</pre>
+  <br />
   <div style="position: relative; top: -35px;">
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <span class="fragment">I want 'x' and 'y' constants</span>
   </div>
   <pre class="fragment highlight javascript" contenteditable>
 const x = position[0];
 const y = position[1];</pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Use destructuring!
   </div>
   <pre class="fragment highlight javascript" contenteditable>
@@ -935,8 +925,8 @@ mySet.has('test'); // true
     <li class="fragment">The object is automatically removed from the Weak Set</li>
     <li class="fragment"><strong>No more memory leak!</strong></li>
   </ul>
+  <br />
   <p class="fragment">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 30px; left: -10px" />
     <span>Use Weak Sets when storing objects</span>
   </p>
 </section>
@@ -979,8 +969,8 @@ myMap.set('testKey', 'testValue');</pre>
 const myMap = {
   'testKey': 'testValue'
 }</pre>
+  <br />
   <p class="fragment" style="position: relative; top: -30px">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 30px; left: -10px" />
     <span>Maps are more readable, and easier to use</span>
   </p>
   <pre class="fragment highlight javascript" contenteditable>
@@ -1108,15 +1098,15 @@ function displayMessage(content, priority = 1) {
 
 <span class="fragment">displayMessage('Hello, I am a message');</span><span class="fragment"> // Priority: 1</span>
 <span class="fragment">displayMessage('Something went wrong!', 10);</span><span class="fragment"> // Priority: 10</span></pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Always put default parameters last
   </div>
 </section>
 
 <section data-background="#93C0E7" id="default-parameters-many">
+  <br />
   <div style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Avoid using too many parameters
   </div>
   <pre class="fragment highlight javascript full" contenteditable style="font-size: 47%">
@@ -1138,8 +1128,8 @@ displayMessage('Default message');
 </section>
 
 <section data-background="#93C0E7" id="default-parameters-many-2">
+  <br />
   <div style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Use destructuring!
   </div>
   <pre class="fragment highlight javascript full" contenteditable style="font-size: 42%">
@@ -1166,8 +1156,8 @@ displayMessage('Default message');
           <li class="fragment">Easier to read</li>
           <li class="fragment">Override defaults only if needed</li>
         </ul>
+        <br />
         <div class="fragment">
-          <img src="images/best-practise-bear.png" class="inline" style="position: relative; top: 30px" />
           Boom!
         </div>
       </div>
@@ -1190,9 +1180,7 @@ const errorMessage = {
   priority: 10,
   title: 'Uh oh'
 };</pre>
-  <p>
-    <img src="images/anteater.png" class="inline" width="70" style="position: relative; top: 30px; left: -10px" /> <span class="fragment">Is there a better way to represent a message?</span>
-  </p>
+  <br />
 </section>
 
 <section data-background="#AFDCFB" id="class">
@@ -1226,8 +1214,8 @@ class Message {
 <span class="fragment">const myMessage = new Message();</span>
 
 <span class="fragment">console.log( myMessage.getContent() ); <span class="fragment">// Hello, I am a message</span></span></pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Class names should be UpperCamelCase
   </div>
 </section>
@@ -1250,8 +1238,8 @@ class Message {
   }
 }</span>
 <span class="fragment">const myErrorMessage = new ErrorMessage();</span></pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     A class represents a <strong>template</strong> for creating objects
   </div>
 </section>
@@ -1278,8 +1266,8 @@ class Message {
     <span class="fragment">return this.content;</span>
   }
 </span>}</pre>
+  <br />
   <div class="fragment" style="position: relative; top: -70px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Aw yeah!
   </div>
 </section>
@@ -1309,8 +1297,8 @@ class Message {
 </section>
 
 <section data-background="#93C0E7" id="class-getter-setter-problem">
+  <br />
   <div style="position: relative; top: -50px;">
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <span class="fragment">I see a bug!</span>
   </div>
   <pre class="fragment highlight javascript" contenteditable>
@@ -1345,7 +1333,6 @@ class Message {
   }
 }</pre>
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <br /><br />
     <div>Use a <strong>leading underscore _</strong></div>
     <div>for <strong>private</strong> properties and functions</div>
@@ -1426,7 +1413,7 @@ class Message {
 </section>
 
 <section data-background="#AFDCFB" id="class-constructor-2">
-  <p>Construtors accept parameters too</p>
+  <p>Constructors accept parameters too</p>
   <pre class="fragment highlight javascript" contenteditable>
 class Message {
   constructor(content) {
@@ -1586,7 +1573,6 @@ function(param1, param2) {
 
 <section data-background="#AFDCFB" data-transition="fade" id="arrow-functions-class">
   <p>
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <span class="fragment">What's wrong with this code?</span>
   </p>
   <br />
@@ -1608,7 +1594,6 @@ class Message {
 
 <section data-background="#AFDCFB" data-transition="fade" id="arrow-functions-class-answer">
   <p>
-    <img src="images/anteater.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     <span>What's wrong with this code?</span>
   </p>
   <br />
@@ -1679,8 +1664,8 @@ class Message {
     setInterval(() => this.increasePriority(), 1000);
   }</span>
 }</pre>
+  <br />
   <div class="fragment" style="position: relative; top: -50px;">
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
     Yessss
   </div>
 </section>
@@ -1995,7 +1980,6 @@ function sendEmailError(error) {
 </section>
 
 <section data-background="#93C0E7" id="promises">
-  <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: 45px; left: -10px" />
   <span class="fragment">There's a better way...</span>
   <br /><br /><br />
   <h2 class="fragment"><em>#25.</em> Promises</h2>
@@ -2314,8 +2298,7 @@ testInternetConnection()
   <p class="fragment">Final message...</p>
   <h2 class="fragment">Use ES6 now!</h2>
   <div class="fragment" style="position: relative; top: 50px">
-    <p>Do it for Barry</p>
-    <img src="images/best-practise-bear.png" class="inline" width="100" style="position: relative; top: -35px" />
+    <p>Then start learning ES7, ES8, ES9, ES10, ....!</p>
   </div>
 </section>
 
