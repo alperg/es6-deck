@@ -1,11 +1,7 @@
 ES6 Deck
 ================
 
-Javascript standards have been updated
-
-- 7 reasons why you should care
-- 25 best new features, with code examples and best practises
-- How to use these features right now
+Javascript standards getting updated every year. Why you should care? Let's find out.
 
 View online @ [https://alperg.github.io/es6-deck/](https://alperg.github.io/es6-deck/)
 
